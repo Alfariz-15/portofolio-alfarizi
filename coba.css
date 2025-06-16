@@ -1,0 +1,53 @@
+/* My Project Box Style */
+.keyboard-box {
+  position: relative;
+  background-color: #1e293b;
+  border-radius: 12px;
+  height: 380px; /* Lebih kecil dari sebelumnya */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.keyboard-box:hover {
+  transform: scale(1.03);
+}
+
+
+.keyboard-name {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  opacity: 1;
+  z-index: 2;
+}
+
+.keyboard-detail-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+  z-index: 3;
+  font-size: 0.9rem;
+}
+
+.keyboard-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  max-width: 90%;
+  max-height: 140px; /* Tambahkan batas tinggi agar proporsional */
+  border-radius: 8px;
+  transition: 0.5s;
+  z-index: 1;
+  object-fit: contain; /* Gambar tetap proporsional meski kotaknya tidak sama */
+}
+.keyboard-box:hover .keyboard-img {
+  transform: translate(-50%, -50%) scale(1.05) rotate(2deg);
+}
